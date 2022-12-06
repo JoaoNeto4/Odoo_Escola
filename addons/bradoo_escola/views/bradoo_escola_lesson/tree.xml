@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bradoo_escola_course_tree_view" model="ir.ui.view">
+        <field name="name">bradoo.escola.lesson.tree</field>
+        <field name="model">bradoo.escola.lesson</field>
+        <field name="arch" type="xml">
+            <tree string="Aulas" > 
+                <field name="date"/>
+                <field name="professor_id"/>
+                <field name="course_name"/>
+                <field name="resume"/>
+                <field name="class_id"/>
+                <field name="alumns_present"/>
+                <field name="alumns_not_present"/>
+ 
+            </tree>
+        </field>
+    </record>
+    
+</odoo>

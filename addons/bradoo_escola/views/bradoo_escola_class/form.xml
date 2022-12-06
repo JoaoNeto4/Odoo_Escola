@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bradoo_escola_class_form_view" model="ir.ui.view">
+        <field name="name">bradoo.escola.class.form</field>
+        <field name="model">bradoo.escola.class</field>
+        <field name="arch" type="xml">
+            <form string="Cursos">
+            
+                <header>
+                    <button name="action_init_class" type="object" string="Iniciar Turma" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                    <button name="action_stop_class" type="object" string="Encerrar Turma" attrs="{'invisible': [('state', '!=', 'started')]}"/>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        <field name="course_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        <field name="course_professor_ids" invisible="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        <field name="professor_id" domain="[('id', 'in', course_professor_ids)]" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Alunos">
+                        <field name="alumn_ids" nolabel="1">  
+                            <tree> 
+                                <field name="display_name"/>
+                                <field name="email"/>
+                                <field name="phone"/> 
+                            </tree>
+                        </field>
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+</odoo>

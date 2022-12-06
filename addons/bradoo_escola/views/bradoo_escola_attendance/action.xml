@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_bradoo_escola_attendance" model="ir.actions.act_window">
+        <field name="name">Presenças</field>
+        <field name="res_model">bradoo.escola.attendance</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_recontent_smiling_face">
+                Adicionar
+            </p>
+        </field>
+    </record>
+    
+</odoo>

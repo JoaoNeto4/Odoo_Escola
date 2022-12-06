@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="bradoo_escola_root" name="Bradoo Escola" action="action_bradoo_escola_class_menu"/>
+
+        <menuitem id="menu_classroom" name="Aulas" parent="bradoo_escola_root" sequence="10"/>
+            <menuitem id="submenu_classroom_class" name="Turmas"  parent="menu_classroom" action="action_bradoo_escola_class_menu" sequence="10"/>
+            <menuitem id="submenu_lesson" name="Aulas" parent="menu_classroom" groups="base.group_user,group_professor" action="action_bradoo_escola_lesson_menu" sequence="20"/>
+            <menuitem id="submenu_class_attendance" name="Presença"  parent="menu_classroom" action="action_bradoo_escola_attendance" sequence="30"/>
+
+
+        <menuitem id="menu_sale" name="Vendas" parent="bradoo_escola_root" sequence="20"/>
+            <menuitem id="submenu_prodcts" name="Produtos" parent="menu_sale" action="product.product_template_action"/>
+            <menuitem id="submenu_quotation" name="Cotações" parent="menu_sale" action="sale.action_quotations_with_onboarding"/>
+            <menuitem id="submenu_sales_order" name="Ordens de Venda" parent="menu_sale" action="sale.action_orders"/>
+
+        <menuitem id="menu_course" name="Cursos" parent="bradoo_escola_root" sequence="30"/>
+            <menuitem id="submenu_course" name="Cursos" parent="menu_course" groups="base.group_user,group_coordinator" action="action_bradoo_escola_course_menu" />
+    </data>
+</odoo>

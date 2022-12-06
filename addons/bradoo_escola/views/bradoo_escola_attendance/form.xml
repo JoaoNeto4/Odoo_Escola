@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bradoo_escola_attendance_form_view" model="ir.ui.view">
+        <field name="name">bradoo.escola.attendance.form</field>
+        <field name="model">bradoo.escola.attendance</field>
+        <field name="arch" type="xml">
+            <form string="Presença">
+                <sheet>
+                    <group>
+                        <field name="lesson_id"/>
+                        <field name="alumn_id" widget="many2one"/>
+                        <field name="is_present"/>
+                    </group>
+                    
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+</odoo>

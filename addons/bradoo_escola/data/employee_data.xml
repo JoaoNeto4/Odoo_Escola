@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<odoo>
+   <data noupdate="0">
+        <record id="employee_data_1" model="hr.employee">
+            <field name="name">Pedro</field>
+            <field name="job_id">2</field>
+            <field name="job_title">Coordenador</field>
+            <field name="employee_type">employee</field>
+            <field name="mobile_phone">46-988774422</field>
+            <field name="work_email">pedro@google.com</field>
+            
+        </record>
+        <record id="employee_data_2" model="hr.employee">
+            <field name="name">Paulo</field>
+            <field name="job_id">1</field>
+            <field name="job_title">Professor</field>
+            <field name="employee_type">employee</field>
+            <field name="mobile_phone">46-999114422</field>
+            <field name="work_email">paulo@google.com</field>
+        </record>
+        <record id="employee_data_3" model="hr.employee">
+            <field name="name">João</field>
+            <field name="job_id">1</field>
+            <field name="job_title">Professor</field>
+            <field name="employee_type">employee</field>
+            <field name="mobile_phone">49-888774421</field>
+            <field name="work_email">joao@google.com</field>
+        </record>
+        <record id="employee_data_4" model="hr.employee">
+            <field name="name">Felipe</field>
+            <field name="job_id">1</field>
+            <field name="job_title">Professor</field>
+            <field name="employee_type">employee</field>
+            <field name="mobile_phone">41-33554477</field>
+            <field name="work_email">felipe@google.com</field>
+        </record>
+            
+    </data>
+</odoo>

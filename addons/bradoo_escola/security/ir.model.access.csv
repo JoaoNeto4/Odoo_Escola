@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bradoo_escola_course,access.bradoo.escola.course,model_bradoo_escola_course,base.group_user,1,0,0,0
+access_bradoo_escola_class,access.bradoo.escola.class,model_bradoo_escola_class,base.group_user,1,0,0,0
+access_bradoo_escola_attendance,access.bradoo.escola.attendance,model_bradoo_escola_attendance,base.group_user,1,0,0,0
+access_bradoo_escola_lesson,access.bradoo.escola.lesson,model_bradoo_escola_lesson,base.group_user,1,0,0,0
+
+access_bradoo_escola_lesson_professor,access.bradoo.escola.lesson.professor,model_bradoo_escola_lesson,group_professor,1,0,1,0
+
+access_bradoo_escola_class_professor,access.bradoo.escola.class.professor,model_bradoo_escola_class,group_professor,1,0,1,0
+
+access_bradoo_escola_course_coordinator,access.bradoo.escola.course.coordinator,model_bradoo_escola_course,group_coordinator,1,1,1,1
+access_bradoo_escola_class_coordinator,access.bradoo.escola.class.coordinator,model_bradoo_escola_class,group_coordinator,1,1,1,1
+access_bradoo_escola_attendance_coordinator,access.bradoo.escola.attendance.coordinator,model_bradoo_escola_attendance,group_coordinator,1,1,1,1
+access_bradoo_escola_lesson_coordinator,access.bradoo.escola.lesson.coordinator,model_bradoo_escola_lesson,group_coordinator,1,1,1,1
+

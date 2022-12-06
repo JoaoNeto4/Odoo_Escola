@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bradoo_escola_class_search_view" model="ir.ui.view">
+        <field name="name">bradoo.escola.class.search.view</field>
+        <field name="model">bradoo.escola.class</field>
+        <field name="arch" type="xml">
+            <search string="status">
+                <field name="name"/>
+                <field name="state" />
+                <field name="course_id"/>
+                <field name="alumns_count"/>   
+                <filter string="Iniciados" name="state" domain="[('state', '=', 'started')]"/>
+                <filter string="Em Formação" name="state" domain="[('state', '=', 'draft')]"/>
+                <filter string="Finalizados" name="state" domain="[('state', '=', 'done')]"/>
+            </search> 
+        </field>
+    </record>
+    
+    
+
+</odoo>

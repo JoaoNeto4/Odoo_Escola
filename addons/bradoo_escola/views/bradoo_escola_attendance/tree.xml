@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="bradoo_escola_attendance_tree_view" model="ir.ui.view">
+        <field name="name">bradoo.escola.attendance.tree</field>
+        <field name="model">bradoo.escola.attendance</field>
+        <field name="arch" type="xml">
+            <tree string="Properties" >
+                <field name="lesson_id"/>
+            </tree>
+        </field>
+    </record>
+    
+</odoo>
